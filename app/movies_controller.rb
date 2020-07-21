@@ -100,5 +100,5 @@ def can_destroy_all_items_at_once
     Movie.create(title: "Movie_#{i}")
   end
   movie = Movie.all
-  movie.delete
+  movie.delete(all)
 end
